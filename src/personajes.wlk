@@ -20,6 +20,8 @@ object mario {
 	var valorRecolectado = 0
 	var ultimoElemento
 	
+	method valorRecolectado() = valorRecolectado
+	
 	method encontrar(elemento){
 		elemento.recibirTrabajo()
 		valorRecolectado += elemento.valorTrabajo()

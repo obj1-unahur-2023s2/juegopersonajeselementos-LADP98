@@ -1,0 +1,22 @@
+import armas.*
+import elementos.*
+import personajes.*
+
+test "ballesta tiene 9 flechas despues de usar" {
+
+	ballesta.usar()
+	assert.that(ballesta.flechas() == 9)
+}
+
+test "unidades recolectadas diferentes de 0" {
+	
+	mario.encontrar(castillo)
+	assert.notThat(mario.valorRecolectado() == 0)
+}
+
+test "tipa da 20 puntos"{
+	
+	mario.encontrar(tipa)
+	mario.encontrar(tipa)
+	assert.equals(tipa.valorTrabajo(),20)
+}
